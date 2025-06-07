@@ -1,114 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Sobre - Rastro Urbano</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-
-    <style>
-        body {
-            background-color: #FAF0E6;
-            font-family: 'Fjalla One', sans-serif;
-            color: #000;
-            line-height: 1.6;
-        }
-
-        .navbar a.nav-link {
-            color: #FAF0E6 !important;
-            margin-left: 15px;
-        }
-
-        .navbar-brand img {
-            margin-right: 10px;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            color: #e10600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-            margin: 2rem 0 1rem;
-        }
-
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 1rem;
-        }
-
-        h2 {
-            color: #e10600;
-            margin-top: 2rem;
-            font-size: 1.8rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-        }
-
-        ul {
-            margin-left: 1.5rem;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: #2f2a2a;
-        }
-
-        .txt-sova {
-            font-family: 'trevosa', sans-serif;
-            font-size: 2.5rem;
-            color: #000;
-            text-decoration: none;
-        }
-
-        footer {
-            background-color: #222;
-            color: #FAF0E6;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 3rem;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            section {
-                padding: 0.5rem;
-            }
-        }
-
-        @font-face {
-            font-family: 'trevosa';
-            src: url('fonts/Deathlies.otf');
-        }
-    </style>
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="corpo">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="home.html">
-                <img src="logo.png" alt="Logo da empresa" width="40" height="40">
+                <img src="logo.png" alt="Logo da empresa" width="40" height="40" />
                 <span class="ms-2">Rastro Urbano</span>
             </a>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Página inicial</a></li>
                     <li class="nav-item"><a class="nav-link" href="Catálogo.html">Catálogo</a></li>
                     <li class="nav-item"><a class="nav-link" href="Carrinho.html">Carrinho</a></li>
                     <li class="nav-item"><a class="nav-link" href="Sobre.html">Sobre</a></li>
@@ -119,13 +40,14 @@
     </nav>
 
     <!-- Cabeçalho -->
-    <header>
-        <h1 class="txt-sova">Rastro Urbano</h1>
+    <header class="corpo">
+        <h1 class="txt-sova corpo">Rastro Urbano</h1>
     </header>
 
     <!-- Seção Sobre -->
-    <section>
-        <p>A Rastro Urbano é mais do que uma marca — é um movimento. Inspirada pela cultura do skate, da arte de rua e da liberdade de expressão, criamos roupas que representam atitude e autenticidade.</p>
+    <section class="corpo">
+        <p>A Rastro Urbano é mais do que uma marca — é um movimento. Inspirada pela cultura do skate, da arte de rua e
+            da liberdade de expressão, criamos roupas que representam atitude e autenticidade.</p>
 
         <h2>Nosso Compromisso</h2>
         <p>Buscamos fortalecer a cultura urbana com coleções que valorizam:</p>
@@ -136,7 +58,8 @@
         </ul>
 
         <h2>Impacto Cultural</h2>
-        <p>Promovemos a inclusão, apoiamos artistas independentes e abrimos espaço para a diversidade em todos os sentidos.</p>
+        <p>Promovemos a inclusão, apoiamos artistas independentes e abrimos espaço para a diversidade em todos os
+            sentidos.</p>
 
         <h2>Sustentabilidade</h2>
         <ul>
@@ -148,15 +71,33 @@
         <p>Junte-se ao movimento. Vista Rastro Urbano.</p>
     </section>
 
-    <!-- Rodapé -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Rastro Urbano - Design Autoral | Produção Local | Coleções Limitadas</p>
+        <p>© 2025 Streetwear X. Todos os direitos reservados.</p>
+        <p>
+          <a href="#">Instagram</a> |
+          <a href="#">Facebook</a> |
+          <a href="#">Whatsapp</a>
+        </p>
     </footer>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-            crossorigin="anonymous"></script>
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 </body>
+
 </html>

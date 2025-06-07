@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Rastro Urbano!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
     <!-- Meta SEO -->
-    <meta name="description" content="Rastro Urbano - Moda autoral, coleções limitadas e produção local. Confira nosso catálogo exclusivo.">
+    <meta name="description"
+        content="Rastro Urbano - Moda autoral, coleções limitadas e produção local. Confira nosso catálogo exclusivo.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,86 +18,88 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-    <style>
-        body {
-            background-color: #FAF0E6;
-            font-family: 'Fjalla One', sans-serif;
-        }
-
-        footer {
-            background-color: #222;
-            color: #FAF0E6;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        .navbar a.nav-link {
-            color: #FAF0E6 !important;
-            margin-left: 15px;
-        }
-
-        .navbar-brand img {
-            margin-right: 10px;
-        }
-        @font-face {
-            font-family: 'trevosa';
-            src: url('fonts/Deathlies.otf');
-        }
-        
-    </style>
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="home.html">
-                <img src="logo.png" alt="Logo da Rastro Urbano" width="40" height="40">
-                <span class="ms-2">Rastro Urbano</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Página inicial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Catálogo.html">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Carrinho.html">Carrinho</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contato.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand d-flex align-items-center" href="home.html">
+            <img src="logo.png" alt="Logo da empresa" width="40" height="40">
+            <span class="ms-2">Rastro Urbano</span>
+          </a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+           
+              <li class="nav-item"><a class="nav-link" href="Catálogo.html">Catálogo</a></li>
+              <li class="nav-item"><a class="nav-link" href="Carrinho.html">Carrinho</a></li>
+              <li class="nav-item"><a class="nav-link" href="Sobre.html">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link" href="Contato.html">Contato</a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <!-- Conteúdo principal -->
     <main class="container my-5">
-        <h1 class="text-center"style="font-family: trevosa; font-size: 80px;">Bem-vindo à Rastro Urbano</h1>
+        <h1 class="text-center hero" style="font-family: trevosa;">Bem-vindo à Rastro Urbano</h1>
         <p class="text-center">Moda autoral, coleções limitadas e produção local.</p>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Rastro Urbano - Design Autoral | Produção Local | Coleções Limitadas</p>
-    </footer>
+  
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-            crossorigin="anonymous"></script>
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <header class="hero hero-margin">
+        <h1>Vista a Atitude</h1>
+        <p>Drop urbano, exclusivo e sem censura</p>
+        <button class="btn">Nova Coleção</button>
+      </header>
+    
+      <section style="padding-bottom: 50px;" class="lancamentos">
+        <h2 class="text-center mb-4">Lançamentos</h2>
+        <div class="products">
+          <div class="product">
+            <img src="Hoodie.png" alt="Hoodie Black Flame">
+            <h3>Hoodie Black Flame</h3>
+            <p>R$ 109,00</p>
+          </div>
+          <div class="product">
+            <img src="Light.png" alt="The light in the Darkness">
+            <h3>The light in the Darkness</h3>
+            <p>R$ 89,00</p>
+          </div>
+          <div class="product">
+            <img src="Cap.png" alt="Cap Midnight">
+            <h3>Cap Midnight</h3>
+            <p>R$ 99,00</p>
+          </div>
+        </div>
+      </section>
+
+    <!---Vlibras-->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+<footer>
+    <p>© 2025 Streetwear X. Todos os direitos reservados.</p>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">Whatsapp</a>
+    </p>
+</footer>
 </body>
 </html>

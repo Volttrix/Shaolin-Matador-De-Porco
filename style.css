@@ -1,0 +1,442 @@
+/* -------------------- IMPORTAÇÃO DE FONTES -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Poppins:wght@300;600&display=swap');
+
+/* -------------------- RESET E ESTILOS BASE -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAF0E6;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  line-height: 1.6;
+  padding-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar a.nav-link {
+  color: #FAF0E6 !important;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar a.nav-link:hover {
+  color: #ddd !important;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+/* -------------------- HERO -------------------- */
+.hero {
+  background: url('https://source.unsplash.com/1600x900/?streetwear,urban') center/cover no-repeat;
+  height: 69vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px #f5f5f5;
+  font-size: 7rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px #b5b0b0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+/* -------------------- BOTÕES -------------------- */
+.btn {
+  background-color: #ff5959;
+  color: #000;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff0000;
+}
+
+/* -------------------- SEÇÕES GERAIS -------------------- */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* -------------------- PRODUTOS -------------------- */
+.products {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: #111;
+  border-radius: 16px;
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.product:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0;
+}
+
+.product p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* -------------------- LOOKBOOK -------------------- */
+.lookbook {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.lookbook img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* -------------------- CARRINHO -------------------- */
+.cart-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.item-info h5 {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.item-info p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.item-actions span {
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.cart-summary {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #ccc;
+  text-align: right;
+}
+
+.cart-summary h4 {
+  margin-bottom: 0.5rem;
+}
+
+.cart-summary p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.checkout-button {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* -------------------- CONTATO -------------------- */
+.contact-container {
+  max-width: 700px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.contact-container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.contact-container p,
+.contact-container li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-container li::before {
+  content: "•";
+  color: royalblue;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+body {
+  background-color: #FAF0E6;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -------------------- FORMULÁRIO -------------------- */
+.form-container {
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 16px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-container .form-group label {
+  color: #000000;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-container .form-group input,
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #ed0000;
+}
+
+.form-container .form-group textarea {
+  resize: none;
+  height: 96px;
+}
+
+.form-container .form-group input::placeholder,
+.form-container .form-group textarea::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus,
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #ff3b3b;
+}
+
+.form-container .form-submit-btn {
+  position: relative;
+  align-self: center;
+  color: #000000;
+  font-weight: 600;
+  background: #e34b4b;
+  border: 1px solid #a20303;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 30px;
+  right: -43%;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+/* -------------------- TEXTO PERSONALIZADO -------------------- */
+.txt-sova {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background-color: #000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* ou defina uma altura fixa se necessário, ex: 60px */
+  z-index: 1000;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* -------------------- RESPONSIVO -------------------- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 0.5rem;
+  }
+}
+/*-----FOOTER--------*/
+.corpo{
+  background-color: #FAF0E6;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  line-height: 1.6;
+  bottom: 70px; /* altura do footer */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.navbar a.nav-link {
+  color: #FAF0E6 !important;
+  margin-left: 15px;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #e10600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+h2 {
+  color: #e10600;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+ul {
+  margin-left: 1.5rem;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #2f2a2a;
+}
+
+.txt-sova {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #000;
+  color: #FAF0E6;
+  text-align: center;
+  padding: 10px 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+footer a {
+  color: #FAF0E6;
+  margin: 0 10px;
+  text-decoration: none;
+}
